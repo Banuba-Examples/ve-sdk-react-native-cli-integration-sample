@@ -29,7 +29,7 @@ target 'vesdkreactnativecliintegrationsample' do
   )
 
     sdk_version = '1.26.2'
-  	pod 'BanubaARCloudSDK', sdk_version #optional
+    pod 'BanubaARCloudSDK', sdk_version #optional
     pod 'BanubaVideoEditorSDK', sdk_version
     pod 'BanubaAudioBrowserSDK', sdk_version #optional
     pod 'BanubaMusicEditorSDK', sdk_version
@@ -56,6 +56,7 @@ target 'vesdkreactnativecliintegrationsample' do
     # Pods for testing
   end
 
+  # Comment these lines for non M1 chips
   post_install do |installer|
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
