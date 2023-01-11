@@ -37,7 +37,7 @@ The following steps help to complete basic integration into your React Native CL
    Add Video Editor SDK dependencies in app gradle file. 
     ```groovy
         // Banuba Video Editor SDK dependencies
-        def banubaSdkVersion = '1.26.2'
+        def banubaSdkVersion = '1.26.3'
         implementation "com.banuba.sdk:ffmpeg:4.4"
         implementation "com.banuba.sdk:camera-sdk:${banubaSdkVersion}"
         implementation "com.banuba.sdk:camera-ui-sdk:${banubaSdkVersion}"
