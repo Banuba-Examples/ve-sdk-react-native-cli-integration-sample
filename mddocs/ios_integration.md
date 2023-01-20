@@ -4,15 +4,13 @@ An integration and customization of Banuba Video Editor SDK is implemented in **
 of your React Native CLI project using native iOS development process.
 
 ## Basic
-The following steps help to complete basic integration into your React Native CLI project.  
+The following steps help to complete basic integration into your React Native CLI project.
 
 :exclamation: **Important:** Please before run ```sudo arch -x86_64 gem install ffi``` in terminal for Apple M-series chip based on ARM architecture.
 
-
 <ins>All changes are made in **ios** directory.</ins>
-1. __Set Banuba Video Editor SDK token__  
-   Set Banuba token in the sample app [AppDelegate](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/blob/master/ios/AppDelegate.swift#L18).<br></br>
-   To get access to your trial, please, get in touch with us by [filling a form](https://www.banuba.com/video-editor-sdk) on our website. Our sales managers will send you the trial token.<br>
+1. __Use your license token__  
+   Set Banuba license token [within the app](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/blob/master/ios/AppDelegate.swift#18.<br></br>
    :exclamation: The token **IS REQUIRED** to run sample and an integration in your app.<br></br>
 
 2. __Add Banuba SDK dependencies__  
@@ -28,8 +26,8 @@ The following steps help to complete basic integration into your React Native CL
    This class helps to initialize and customize Banuba Video Editor SDK.</br><br>
 
 5. __Add assets and resources__
-    1. [bundleEffects](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/tree/master/ios/vesdkreactnativecliintegrationsample/bundleEffects) to use built-in Banuba AR effects. Using Banuba AR requires [Face AR product](https://docs.banuba.com/face-ar-sdk-v1). Please contact Banuba Sales managers to get more AR effects.
-    2. [luts](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/tree/master/ios/vesdkreactnativecliintegrationsample/luts) to use Lut effects shown in the Effects tab.</br><br>
+   1. [bundleEffects](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/tree/master/ios/vesdkreactnativecliintegrationsample/bundleEffects) to use built-in Banuba AR effects. Using Banuba AR requires [Face AR product](https://docs.banuba.com/face-ar-sdk-v1). Please contact Banuba Sales managers to get more AR effects.
+   2. [luts](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/tree/master/ios/vesdkreactnativecliintegrationsample/luts) to use Lut effects shown in the Effects tab.</br><br>
 
 6. __Start the SDK__  
    Use ```startIosVideoEditor()``` method defined in ```App.js``` to start Video Editor from React Native on iOS.</br>
@@ -56,7 +54,7 @@ The following steps help to complete basic integration into your React Native CL
             />
    ```
    Export returns response where you can find ```videoUri``` the path were exported video stored.</br>
-   [See example](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/blob/master/App.js#L53)</br>
+   [See example](https://github.com/Banuba-Examples/ve-sdk-react-native-cli-integration-sample/blob/master/App.js#L95)</br>
 
 
 ## What is next?
